@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ae0328749735a6102e5cfefce053af1c" label="Computers" max_length="40" name="x_1758226_demo1_computers" type="collection">
+        <element label="Assigner" max_length="32" name="assgner" reference="sys_user" type="reference"/>
+        <element label="Computer Apply Number" max_length="10" name="computer_apply_number" type="string"/>
+        <element default="macbook_pro" label="Computer Type" max_length="40" name="computer_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="HP" sequence="2" value="hp"/>
+                <element inactive_on_update="false" label="MacBook Pro" sequence="0" value="macbook_pro"/>
+                <element inactive_on_update="false" label="Dell" sequence="1" value="dell"/>
+            </choice>
+        </element>
+        <element label="Assgne Date" max_length="40" name="assgne_date" type="glide_date"/>
+        <index name="index">
+            <element name="assgner"/>
+        </index>
+    </element>
+</database>

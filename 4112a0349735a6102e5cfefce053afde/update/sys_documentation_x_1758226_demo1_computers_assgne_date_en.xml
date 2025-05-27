@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="assgne_date" label="Assgne Date" language="en" table="x_1758226_demo1_computers">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>assgne_date</element>
+            <help/>
+            <hint/>
+            <label>Assgne Date</label>
+            <language>en</language>
+            <name>x_1758226_demo1_computers</name>
+            <plural/>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2025-05-26 07:12:55</sys_created_on>
+            <sys_mod_count>3</sys_mod_count>
+            <sys_name>Assgne Date</sys_name>
+            <sys_package display_value="Demo1" source="x_1758226_demo1">4112a0349735a6102e5cfefce053afde</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Demo1">4112a0349735a6102e5cfefce053afde</sys_scope>
+            <sys_update_name>sys_documentation_x_1758226_demo1_computers_assgne_date_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2025-05-26 07:12:57</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

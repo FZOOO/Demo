@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="ba2460f49735a6102e5cfefce053af6e" label="Computer Apply" max_length="40" name="x_1758226_demo1_computer_apply" type="collection">
+        <element label="Onboarding Date" max_length="40" name="onboarding_date" type="glide_date"/>
+        <element label="Approval History" max_length="40" name="approval_history" type="journal"/>
+        <element label="Request Date" max_length="40" name="request_date" type="glide_date"/>
+        <element label="Request For" max_length="32" name="request_for" reference="sys_user" type="reference"/>
+        <element label="Requester" max_length="32" name="requester" reference="sys_user" type="reference"/>
+        <element choice="3" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Awaiting Approval" sequence="1" value="awaiting_approval"/>
+                <element inactive_on_update="false" label="Completed" sequence="3" value="completed"/>
+                <element inactive_on_update="false" label="No Started" sequence="0" value="no_started"/>
+                <element inactive_on_update="false" label="Rejected" sequence="2" value="rejected"/>
+            </choice>
+        </element>
+        <element label="Computer Apply Number" max_length="10" name="computer_apply_number" type="string"/>
+        <element label="Compuer Model" max_length="40" name="compuer_model" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="MacBook Pro" sequence="0" value="macbook_pro"/>
+                <element inactive_on_update="false" label="Dell" sequence="1" value="dell"/>
+                <element inactive_on_update="false" label="HP" sequence="2" value="hp"/>
+            </choice>
+        </element>
+        <element label="Approval" max_length="40" name="approval" type="string"/>
+        <index name="index">
+            <element name="request_for"/>
+        </index>
+        <index name="index2">
+            <element name="requester"/>
+        </index>
+    </element>
+</database>
